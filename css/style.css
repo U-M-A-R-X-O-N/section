@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(grey 50%, white 50%);
+}
+
+.hero__background {
+  background-image: url(../img/circle.png), url(../img/background\ circle.png),
+    url(../img/background\ circle.png), url(../img/background\ circle.png),
+    url(../img/background\ circle.png);
+  background-repeat: no-repeat;
+  background-position: left top, 20% 8%, 80% 15%, 88% 75%, 15% 90%;
+  background-size: 15%, 12%, 14%;
+  padding-top: 80px;
+}
+
+.hero__block {
+}
+
+.hero__heading {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 59px;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #cb7e0a;
+}
+
+.hero__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.105em;
+  color: #ffffff;
+}
+
+.hero__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 150px;
+}
+
+.hero__rotate {
+  width: 260px;
+  height: 260px;
+  transform: rotate(45deg);
+  background-color: white;
+  box-shadow: 3px 3px 34px -14px rgba(0, 0, 0, 0.25);
+  border-radius: 28px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  transition: all 0.3s ease-in;
+}
+
+.hero__rotate:hover {
+  box-shadow: 5px 5px 45px -5px rgba(0, 0, 0, 0.5);
+}
+
+.hero__list {
+  transform: rotate(-45deg);
+  width: 90%;
+  margin: 0;
+}
+
+.hero__image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero__blue-heading {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.095em;
+  color: #061ef4;
+}
+
+.hero__lorem {
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.095em;
+  color: #000000;
+}
+
+.hero__btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  color: #061ef4;
+  border-color: #061ef4;
+  border-radius: 50%;
+  font-size: 35px;
+}
+
+.hero__btn:active {
+  background-color: crimson;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 90%;
+  }
+
+  .hero__div {
+    padding-top: 100px;
+  }
+
+  .hero__rotate {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+
+  .hero__heading {
+    font-size: 40px;
+  }
+
+  .hero__paragraph {
+    font-size: 18px;
+  }
+
+  .hero__rotate {
+    width: 230px;
+    height: 230px;
+    border-radius: 24px;
+  }
+
+  .hero__image {
+    width: 40px;
+    height: 45px;
+  }
+
+  .hero__blue-heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__lorem {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .hero__btn {
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+  }
+
+  .hero__btn:active {
+    background-color: crimson;
+  }
+}
